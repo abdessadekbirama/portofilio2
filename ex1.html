@@ -22,7 +22,7 @@
             {
                 if (this.readyState == 4 && this.status == 200)
                 {
-                    p1.textContent = this.responseText;
+                    p1.textContent = JSON.parse(this.responseText);
                 }
             }
         }
